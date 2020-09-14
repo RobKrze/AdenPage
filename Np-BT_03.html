@@ -55,8 +55,8 @@
     max-height: 0px;
     z-index: 0;
     margin-top: 700px;
-    margin-left: 650px;
-    margin-right: 50px;
+    /* margin-left: 650px; */
+    /* margin-right: 50px; */
   /* margin-bottom: 100px; */
    
     width: 100%;
@@ -207,6 +207,7 @@
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
+      border-radius: 15px; 
     }
     .btn-lg {
       width: 100%;
@@ -229,6 +230,8 @@
   height: 768px;
   width: 1400px;
   align-items: center;
+  background-repeat: no-repeat;
+  margin: 100vw;
 }
 
 .logo_position {
@@ -263,11 +266,13 @@ margin-bottom: 100px;
     padding-bottom: 50px;
    }
 
+
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<section class="jumbotron">
+<section style="background-repeat" no-repeat; class="jumbotron">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -306,7 +311,7 @@ margin-bottom: 100px;
     
 <div id="about" class="container-fluid">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 col-sm-offset-4" style="display: flex; flex-wrap: wrap">
             <h2>About Company Page</h2><br>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -347,7 +352,7 @@ margin-bottom: 100px;
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="img\B.jpg" alt="New York" width="400" height="300">
+                        <img src="img\B.jpg" style="object-fit: cover"; alt="New York" width="400" height="300" >
                         <p><strong>BBBBBBBBBBB</strong></p>
                         <p>We built New York</p>
                     </div>
