@@ -183,6 +183,18 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+
+  .insight_fild {
+  position: relative;
+  height: 768px;
+  max-width: 1400px;
+  background: url('./img/fot01.png') no-repeat center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -213,10 +225,18 @@
       width: 100%;
       margin-bottom: 35px;
     }
+    
   }
   @media screen and (max-width: 480px) {
     .logo {
       font-size: 150px;
+    }
+    .insight_fild {
+    background: url('./img/fot01_480.jpg') no-repeat center ; 
+    background-size: cover;
+    height: auto;
+    max-width: auto;
+  
     }
   }
 
@@ -225,16 +245,7 @@
 
 
 
-  .insight_fild {
-  position: relative;
-  height: 768px;
-  max-width: 1400px;
-  background: url('./img/fot01.png') no-repeat center ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+ 
 
 .logo_position {
   position: absolute;
@@ -341,36 +352,46 @@ margin-bottom: 100px;
 
 <!-- Container (Portfolio Section) -->
 <section style="background-color:  #006ba0">
-    <div id="portfolio" class="container-fluid text-center bg-grey">
-        <h2>SOFTWARE SOLUTION</h2><br>
-     <!--   <h4>What we have created</h4>
-            <div class="row text-center slideanim"> -->
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img\A.jpg" alt="Paris" width="400" height="300">
+  <div id="portfolio"  class="container">
+    <h2>SOFTWARE SOLUTION</h2><br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="img\A.jpg" alt="Paris" width="400" height="300">
                         <p><strong>AAAAAAAAAA</strong></p>
                         <p>Yes, we built Paris</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img\B.jpg" style="object-fit: cover"; alt="New York" width="400" height="300" >
+        </div>
+      <div class="col-md-3">
+        <img src="img\B.jpg" style="object-fit: cover"; alt="New York" width="400" height="300" >
                         <p><strong>BBBBBBBBBBB</strong></p>
                         <p>We built New York</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img\C.jpg" alt="San Francisco" width="400" height="300">
+      </div>
+      <div class="col-md-3">
+        <img src="img\C.jpg" alt="San Francisco" width="400" height="300">
                         <p><strong>CCCCCCCCCCC</strong></p>
                         <p>Yes, San Fran is ours</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <img src="img\D.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>DDDDDDDDDDDDDD</strong></p>
+                        <p>Yes, San Fran is ours</p>
+      </div>
     </div>
+  </div>
   </section>
 
-  <section style="background-color:  #006ba0">
+  <section style="background-color:  #951a1c">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="loga\archeton.png" alt="San Francisco">  <img src="loga\egurroladance.png" alt="San Francisco">
+        </div>
+        <div class="col-md-3">
+          <img src="loga\city.png" alt="San Francisco">
+        </div>
+      </div>
+    </div>
+    
   <h2>NASI KLIENCI</h2>
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
         <!-- Indicators -->
@@ -386,7 +407,7 @@ margin-bottom: 100px;
                 <img src="loga\archeton.png" alt="San Francisco">  <img src="loga\egurroladance.png" alt="San Francisco">
             </div>
             <div class="item">
-                <img src="loga\city.png" alt="San Francisco">
+                
             </div>
             <div class="item">
                 <img src="loga\egurroladance.png" alt="San Francisco">
@@ -456,6 +477,7 @@ margin-bottom: 100px;
 </footer>
 
 <script>
+  /*
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -490,6 +512,7 @@ $(document).ready(function(){
     });
   });
 })
+*/
 </script>
 
 </body>
