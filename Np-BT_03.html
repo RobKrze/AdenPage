@@ -277,8 +277,17 @@ margin-bottom: 100px;
   background-position: left top;
   background-repeat: no-repeat;
   padding: 20px;
-  width: 200px;
-  height: 300px;
+  width: 240px;
+  height: 320px;
+}
+
+.rcorners {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 240px;
+  height: 320px;
 }
 
   </style>
@@ -356,28 +365,33 @@ margin-bottom: 100px;
     <h2>SOFTWARE SOLUTION</h2><br>
 
     <div class="row">
-      <div class="col-md-3">
-        <div id="rcorners">
-            <img src="img\A.jpg" style="object-fit: cover" width="240" height="320">
-                 <p><strong>AAAAAAAAAA</strong> </p>
-                 <p>Yes, we built Paris</p>
+      <div class="col-md-4" id="rcorners">
+
+        <div>
+            <img class="rcorners" src="img\A.jpg" style="object-fit: cover" width="240" height="320">
+            <div>
+              <p><strong>aaaaaaaaaaaaaa</strong></p>
+            </div>
         </div>
       </div>
 
-      <div id="rcorners" class="col-md-3">
-        <img src="img\B.jpg" style="object-fit: cover"; alt="New York" width="240" height="320" >
-                        <p><strong>BBBBBBBBBBB</strong></p>
-                        <p>We built New York</p>
+      <div class="col-md-4 rcorners">
+        <img class="rcorners" src="img\B.jpg" style="object-fit: cover"; alt="New York" width="240" height="320" >
+          <div>
+            <p><strong>bbbbbbbbbbbbbbbb</strong></p>
+          </div>
       </div>
-      <div id="rcorners" class="col-md-3">
-        <img src="img\C.jpg" alt="San Francisco" width="240" height="320">
-                        <p><strong>CCCCCCCCCCC</strong></p>
-                        <p>Yes, San Fran is ours</p>
+      <div class="col-md-4 rcorners">
+        <img class="rcorners" src="img\C.jpg" alt="San Francisco" width="240" height="320">
+        <div>
+            <p><strong>cccccccccccccccc</strong></p>
+        </div>
       </div>
-      <div id="rcorners" class="col-md-3">
+      <div class="col-md-4 rcorners">
         <img src="img\D.jpg" alt="San Francisco" width="240" height="320">
-                        <p><strong>DDDDDDDDDDDDDD</strong></p>
-                        <p>Yes, San Fran is ours</p>
+        <div>
+          <p><strong>dddddddddddd</strong></p>
+        </div>
       </div>
     </div>
   </div>
