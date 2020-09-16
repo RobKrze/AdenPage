@@ -311,28 +311,28 @@ margin-bottom: 100px;
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<section style="background-repeat" no-repeat; class="jumbotron">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <div class="navbar-brand logo_position"> <img src="./img/Aden_logo.svg" href="#myPage"/>
-      </div> 
+<section style="background-repeat; padding-top: 0px;" no-repeat; class="jumbotron" >
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        <div class="navbar-brand logo_position"> <img src="./img/Aden_logo.svg" href="#myPage"/>
+        </div> 
       </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">integracja</a></li>
-            <li><a href="#portfolio">embdded</a></li>
-            <li><a href="#contact">kontakt</a></li>
-        </ul>
-        </div>
-  </div>
-</nav>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#services">integracja</a></li>
+                  <li><a href="#portfolio">embdded</a></li>
+                  <li><a href="#contact">kontakt</a></li>
+              </ul>
+          </div>
+       </div>
+  </nav>
 
 
     <div class="d-flex justify-content-center ">
@@ -343,7 +343,7 @@ margin-bottom: 100px;
             </div>
      </div>
     </div>
-</section style="padding-bottom: 30px">
+</section style="padding-bottom: 0px">
 
 <!-- Container (About Section) -->
 <section style="padding-top: 30px">
@@ -371,24 +371,29 @@ margin-bottom: 100px;
       <div class="col-md-3 rcorners" id="rcorners">
 
         <div>
-            <img class="rcorners" src="img\A.jpg" style="object-fit: cover">
+          <div>
+          <img class="rcorners" src="img\A.jpg" style="object-fit: cover; width: 100%; height: auto; padding: 0px;">
             <div>
               <p><strong>aaaaaaaaaaaaaa</strong></p>
+            </div>    
             </div>
         </div>
       </div>
 
-      <div class="col-md-3 rcorners" id="rcorners">
-        <img class="rcorners" src="img\B.jpg" style="object-fit: cover">
+      <div class="col-md-3 rcorners" style="padding: 0px" id="rcorners">
+        <div>
+        <img class="rcorners" src="img\B.jpg" style="object-fit: cover width: 100%; height: auto;">
           <div>
             <p><strong>bbbbbbbbbbbbbbbb</strong></p>
           </div>
       </div>
-      <div class="col-md-3 rcorners" id="rcorners">
+      <div class="col-md-3 rcorners" style="padding: 0px; cover; width: 100%; height: auto;" id="rcorners">
+        <div>
         <img class="rcorners" src="img\C.jpg">
         <div>
             <p><strong>cccccccccccccccc</strong></p>
         </div>
+      </div>
       </div>
 <!--  <div class="col-md-4 rcorners">
         <img src="img\D.jpg">
@@ -481,16 +486,16 @@ margin-bottom: 100px;
     <div class="container" >
       <div class="row">
         <div class="col-md-4">
-          <img src=".\loga\archeton.jpg" alt="Archeton"> 
+          <img src="./loga/archeton_w.png" alt="Archeton"> 
         </div>
         <div class="col-md-4">
-          <img src="loga\city.jpg" alt="City">
-        </div>
+          <img src="./loga/city_w.png" alt="City">
+        </div>  
         <div class="col-md-4">
           <img src="loga\agurrola.jpg" alt="Agurrola Dance Studio">
         </div>
         <div class="col-md-4">
-          <img src=".\loga\friendlyway.jpg" alt="San Francisco">
+          <img src="loga\friendlyway.jpg" alt="San Francisco">
         </div>
       <!--  <div class="col-md-4">
           <img src="loga\oknoplast.png" alt="San Francisco"> -->
