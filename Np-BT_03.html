@@ -17,15 +17,16 @@
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
-    pa
-  }
+      }
   
   h2 {
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
-    color: #303030;
+    color: #006BA0;
     font-weight: 600;
+    margin-top: 100px;
     margin-bottom: 30px;
+    text-align: center;
   }
   h4 {
     font-size: 19px;
@@ -45,6 +46,8 @@
         z-index: 0;
     /* transform: translateX(-50%) translateY(-50%); */
     font-family: Montserrat, sans-serif;
+    align-items: center;
+    margin: 0 auto;
 }	
 
   .container-fluid {
@@ -54,6 +57,7 @@
     height: auto;
     max-width: 1400px;
     z-index: 0;
+    
     /* margin-top: 700px; */ 
     /* margin-left: 650px; */
     /* margin-right: 50px; */
@@ -274,19 +278,21 @@ margin-bottom: 100px;
 
 #rcorners {
   border-radius: 25px;
-  background-position: left top;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 20px;
+  margin: 30px;
   width: 240px;
+  height: 270px;
+  background-color: #fff;
+  margin-bottom: 100px;
  
 }
 
 .rcorners {
   border-radius: 25px;
-  background-position: left top;
+  border-radius: 25px 25px 0px 0px; 
   background-repeat: no-repeat;
-  padding: 20px;
-  width: 240px;
+    width: 240px;
 
 }
 
@@ -326,7 +332,7 @@ margin-bottom: 100px;
             </div>
      </div>
     </div>
-</section>
+</section style="padding-bottom: 30px">
 
 <!-- Container (About Section) -->
 <section style="padding-top: 30px">
@@ -361,12 +367,12 @@ margin-bottom: 100px;
 </section> -->
 
 <!-- Container (Portfolio Section) -->
-<section style="background-color:  #006ba0" style="padding-bottom: 30px">
+<section style="background-color:  #b2d2e2" style="padding-bottom: 30px; padding-top: 30px;">
   <div id="portfolio"  class="container">
     <h2>SOFTWARE SOLUTION</h2><br>
 
     <div class="row">
-      <div class="col-md-4" id="rcorners">
+      <div class="col-md-3 rcorners" id="rcorners">
 
         <div>
             <img class="rcorners" src="img\A.jpg" style="object-fit: cover">
@@ -376,24 +382,24 @@ margin-bottom: 100px;
         </div>
       </div>
 
-      <div class="col-md-4 rcorners">
+      <div class="col-md-3 rcorners" id="rcorners">
         <img class="rcorners" src="img\B.jpg" style="object-fit: cover">
           <div>
             <p><strong>bbbbbbbbbbbbbbbb</strong></p>
           </div>
       </div>
-      <div class="col-md-4 rcorners">
+      <div class="col-md-3 rcorners" id="rcorners">
         <img class="rcorners" src="img\C.jpg">
         <div>
             <p><strong>cccccccccccccccc</strong></p>
         </div>
       </div>
-      <div class="col-md-4 rcorners">
+<!--  <div class="col-md-4 rcorners">
         <img src="img\D.jpg">
-        <div>
-          <p><strong>dddddddddddd</strong></p>
-        </div>
+      <div>
+        <p><strong>dddddddddddd</strong></p>
       </div>
+      </div> -->
     </div>
   </div>
 
@@ -402,46 +408,46 @@ margin-bottom: 100px;
   <section style="background-color:  #951a1c">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <img src="loga\archeton.png" alt="San Francisco"> 
+        <div class="col-md-4">
+          <img src=".\loga\archeton.png" alt="Archeton"> 
         </div>
-        <div class="col-md-3">
-          <img src="loga\city.png" alt="San Francisco">
+        <div class="col-md-4">
+          <img src=".\loga\city.png" alt="City">
         </div>
-        <div class="col-md-3">
-          <img src="loga\egurroladance.png" alt="San Francisco">
+        <div class="col-md-4">
+          <img src=".\loga\agurrola_w.png" alt="Agurrola Dance Studio">
         </div>
-        <div class="col-md-3">
-          <img src="loga\friendlyway.png" alt="San Francisco">
+        <div class="col-md-4">
+          <img src=".\loga\friendlyway.png" alt="San Francisco">
         </div>
-        <div class="col-md-3">
-          <img src="loga\oknoplast.png" alt="San Francisco">
+      <!--  <div class="col-md-4">
+          <img src="loga\oknoplast.png" alt="San Francisco"> -->
         </div>
       </div>
     </div>
     
-  <h2>NASI KLIENCI</h2>
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+  
+      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span <img src="loga\city.png" alt="San Francisco"> </span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+          <!-- Wrapper for slides -->
+          
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span <img src="loga\city.png" alt="San Francisco"> </span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
 </section>
 
 <section style="background-color:  #951a1c">
