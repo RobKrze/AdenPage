@@ -37,7 +37,6 @@
     padding-left: 50px;
     padding-bottom: 100px;
 }
-  }  
   
   .jumbotron {
    /* position: relative; */
@@ -330,7 +329,7 @@ margin-bottom: 100px;
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<section style="background-repeat; padding-top: 0px;" no-repeat; class="jumbotron" >
+<section style="padding: 0;" class="jumbotron" >
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -390,11 +389,11 @@ margin-bottom: 100px;
     <div class="row">
       
       <div class="col-md-1" style="padding: 0px">
-          <img src="./img/bluearrow_left.svg" style="padding-top: 120px; padding-left: 50px;">
+          <img src="./img/bluearrow_left.svg" style="padding-top: 120px; padding-left: 50px;cursor: pointer;" onclick="prevSlide()">
           
         
       </div>
-      <div class="col-md-10" style="display: flex; justify-content: center;">
+      <div id="sliderr" class="col-md-10" style="display: flex; justify-content: center;">
         <div class="center" id="rcorners" style="padding: 0px">
           <div>
             <div>
@@ -423,9 +422,28 @@ margin-bottom: 100px;
               </div>
             </div>
         </div>
+
+        <div class="center " style="padding: 0px" id="rcorners">
+          <div>
+            <img class="rcorners" src="img\B.jpg" style="object-fit: cover; width: 100%; height: auto;">
+            <div>
+                <p><strong>eeeeeeeeeeee</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center " style="padding: 0px" id="rcorners">
+          <div>
+            <img class="rcorners" src="img\B.jpg" style="object-fit: cover; width: 100%; height: auto;">
+            <div>
+                <p><strong>fffffffffffffff</strong></p>
+            </div>
+          </div>
+        </div>
+
       </div>
         <div class="col-md-1" style="padding: 0px"> 
-         <img src="./img/bluearrow_right.svg" style="padding-top: 120px; padding-left: -50px;">
+         <img src="./img/bluearrow_right.svg" style="padding-top: 120px; padding-left: -50px;cursor: pointer;" onclick="nextSlide()">
         </div>
      </div>
     </div>
@@ -483,7 +501,7 @@ margin-bottom: 100px;
   </section>  
 
 <!-- <section style="background-color: #951a1c; padding-top: 30px" >
-    <!-- Container (Contact Section) 
+ Container (Contact Section) 
     <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
         <div class="row">
@@ -517,7 +535,7 @@ margin-bottom: 100px;
 
 
 
-<section style="background-color: #951a1c; padding-top: 30px" >
+<section style="background-color: #951a1c; padding: 30px" >
   <div class="container">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-10">
@@ -533,7 +551,9 @@ margin-bottom: 100px;
             fax: (48 12) 269 15 16
             </p>
             <p>
-              <span <img src="img\Aden_gray_Logo.svg" alt="Aden"> </span>
+              <span>
+                <img src="img/Aden_gray_Logo.svg" alt="Aden">
+              </span>
               ADEN PLUS sp. z o.o.
 
               NIP: PL 6762372654
@@ -555,6 +575,7 @@ margin-bottom: 100px;
 </footer>
 -->
 
+<script src='./js/slider.js'></script>
 <script>
   /*
 $(document).ready(function(){
