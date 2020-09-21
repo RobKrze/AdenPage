@@ -347,7 +347,9 @@ margin-bottom: 100px;
 	border-color: gray!important;
 	border-bottom-style: solid;
     border-bottom-width: 1px;
-  } 
+    
+
+} 
 
 .panel-group .panel {
 		border-radius: 0;
@@ -355,11 +357,23 @@ margin-bottom: 100px;
 		border-color: #f2f2f2;
 	}
 
-.panel-title {
+	.panel-default > .panel-heading {
+		padding: 0;
+		border-radius: 0;
+		color: #212121;
+		background-color: #f2f2f2;
+    
+    
+		/* border-color: #EEEEEE; */
+	}
+
+	.panel-title {
 		border:none;
 		font-size: 18px;
+		font-weight: bold;
 		color: #284a58;
 		border-color: gray!important;
+		border-bottom-style: solid;
 		border-bottom-width: 1px;
 		border-bottom-color: #284a58;
 		background-color: #f2f2f2;
@@ -377,62 +391,10 @@ margin-bottom: 100px;
 		color: #284a58;
 	}
 
-	.panel-def {
-    border-top-color: #f2f2f2;
-		background-color: #ffffff;
-    padding: 0;
-		border-radius: 0;
-		color: #212121;
+	.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: #f2f2f2;
+		background-color: #f2f2f2;
 	}
-
- #main {
-  max-width: auto;
-  border-top: 2px solid black;
-  display: flex;
-  font-weight: normal;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-
-#number {
- max-width: 50px;
- display: flex;
-}
-
-#main div {
-  -ms-flex: 1;  /* IE 10 */  
-  flex: 1;
-  -moz-box-flex: 1;
-  flex: 1;
-}
-
-.bignumber {
-  font-size: 28px;
-  margin-right: 30px;
-  padding-bottom: 5px;
-}
-
-.panel-text {
-  font-size: 14px;
-  color: gray;
-  font-weight: normal;
-}
-
-.smletter {
-  font-size: 28px;
-  margin-right: 30px;
-  padding-left: 50px;
-  padding-bottom: 5px;
-  border-top: 1px solid black;
-  display: flex;
-}
-
-#main {
-  
-  font-weight: normal;
-  
-}
-
 
 
   </style>
@@ -608,64 +570,87 @@ margin-bottom: 100px;
         <div class="col-md-6">col-md-6
 
           2 of 2
-          
-
-          <div style="padding-left: 40px; padding-top: 35px;">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     
-             <div class="panel-def panel-title" id="main">
-                  <div id="number" class="bignumber" >29.</div>
-                  <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="more-less glyphicon glyphicon-menu-down"></i>
+                      aaaaaaaaaaaaaaaaaaaaaaaa 
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe iecone nis nulpa voles eum nimus mi, iur aturiat ecaborit estibus num audiscitio eossitatem a voluptatiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe ientorem. Temporerum volutae as volupta nobitatumque quam 
+
+                    inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe G
+                  </div>
+                </div>
               </div>
-              <div class="panel-def panel-title" id="main">
-                <div id="number" class="bignumber" >29.</div>
-                <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="smletter" >a.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="smletter" >b.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="smletter" >c.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="bignumber" >27.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-                <div id="number" class="bignumber" >26.</div>
-                <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="bignumber" >25.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="smletter" >a.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="smletter" >b.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
-            <div class="panel-def panel-title" id="main">
-              <div id="number" class="bignumber" >24.</div>
-              <div class="panel-def panel-text"> Genimus anditatus nobis dolendam eos mod ut eum et ipiduntur, ad ex ea aut omnit ut quiditatus, nihit eumenimus dem. Occab im vellit restibu scientorem. </div>  
-            </div>
+    
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="more-less glyphicon glyphicon-menu-down"></i>
+                      bbbbbbbbbbbbbbb
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe iecone nis nulpa voles eum nimus mi, iur aturiat ecaborit estibus num audiscitio eossitatem a voluptatiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe ientorem. Temporerum volutae as volupta nobitatumque quam 
+
+        inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe G
+                  </div>
+                </div>
               </div>
-              <div class="row">
-                <div class="polygon-div" style="color: #951a1c"> 
-                  <svg height="210" width="500">
-                    <polygon points="0,200,170,100 0,0" style="fill: #951a1c; stroke:  #951a1c;;stroke-width:1" d="M39 14 18 0 0 1 30 l36 63 18 0 0 1 -15 27l-73 0a18 18 0 0 1 -15 -27" />
-                  </svg>
+    
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span class="more-less glyphicon glyphicon-menu-down"></span>
+                      cccccccccccccc
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe iecone nis nulpa voles eum nimus mi, iur aturiat ecaborit estibus num audiscitio eossitatem a voluptatiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe ientorem. Temporerum volutae as volupta nobitatumque quam 
+
+        inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe G
+                  </div>
+                </div>
               </div>
-            </div>
-                
-          
+              
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span class="more-less glyphicon glyphicon-menu-down"></span>
+                      ddddddddddddddddddddd
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                    minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe iecone nis nulpa voles eum nimus mi, iur aturiat ecaborit estibus num audiscitio eossitatem a voluptatiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit a atiur sitios et occulle stisciistius nam, ut minumquosam ut voluptat officaescit asi omnimi, quam accupta tendita tistotae dolum, quat fuga. Imp ientorem. Temporerum volutae as volupta nobitatumque quam inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe ientorem. Temporerum volutae as volupta nobitatumque quam 
+
+        inverio velit volupti tenis mod molutecus everio magnimi litatio. Nam eius, qui alibe G
+                  </div>
+                </div>
+              </div>
+            </div><!-- panel-group -->
+          </div><!-- container -->
+          <div class="row">
+            <div class="polygon-div" style="color: #951a1c"> 
+              <svg height="210" width="500">
+                <polygon points="0,200,170,100 0,0" style="fill: #951a1c; stroke:  #951a1c;;stroke-width:1" d="M39 14 18 0 0 1 30 l36 63 18 0 0 1 -15 27l-73 0a18 18 0 0 1 -15 -27" />
+              </svg>
+          </div>
         
   </section>  
 
