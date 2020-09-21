@@ -351,7 +351,7 @@ margin-bottom: 100px;
 	border-color: gray!important;
 	border-bottom-style: solid;
     border-bottom-width: 1px;
-    margin-right: 400px;
+    
 
 } 
 
@@ -366,7 +366,7 @@ margin-bottom: 100px;
 		border-radius: 0;
 		color: #212121;
 		background-color: #f2f2f2;
-    margin-right: 400px;
+    
     
 		/* border-color: #EEEEEE; */
 	}
@@ -465,11 +465,11 @@ margin-bottom: 100px;
     <div class="row">
       
       <div class="col-md-1" style="padding: 0px">
-          <img src="./img/bluearrow_left.svg" style="padding-top: 120px; padding-left: 50px;">
+          <img src="./img/bluearrow_left.svg" style="padding-top: 120px; padding-left: 50px;cursor: pointer;" onclick="prevSlide()">
           
         
       </div>
-      <div class="col-md-10" style="display: flex; justify-content: center;">
+      <div id="sliderr" class="col-md-10" style="display: flex; justify-content: center;">
         <div class="center" id="rcorners" style="padding: 0px">
           <div>
             <div>
@@ -498,9 +498,28 @@ margin-bottom: 100px;
               </div>
             </div>
         </div>
+
+        <div class="center " style="padding: 0px" id="rcorners">
+          <div>
+            <img class="rcorners" src="img\B.jpg" style="object-fit: cover; width: 100%; height: auto;">
+            <div>
+                <p><strong>eeeeeeeeeeee</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center " style="padding: 0px" id="rcorners">
+          <div>
+            <img class="rcorners" src="img\B.jpg" style="object-fit: cover; width: 100%; height: auto;">
+            <div>
+                <p><strong>fffffffffffffff</strong></p>
+            </div>
+          </div>
+        </div>
+
       </div>
         <div class="col-md-1" style="padding: 0px"> 
-         <img src="./img/bluearrow_right.svg" style="padding-top: 120px; padding-left: -50px;">
+         <img src="./img/bluearrow_right.svg" style="padding-top: 120px; padding-left: -50px;cursor: pointer;" onclick="nextSlide()">
         </div>
      </div>
     </div>
@@ -555,7 +574,6 @@ margin-bottom: 100px;
         <div class="col-md-6">col-md-6
 
           2 of 2
-          <div class="container">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     
               <div class="panel panel-default">
@@ -637,11 +655,11 @@ margin-bottom: 100px;
                 <polygon points="0,200,170,100 0,0" style="fill: #951a1c; stroke:  #951a1c;;stroke-width:1" d="M39 14 18 0 0 1 30 l36 63 18 0 0 1 -15 27l-73 0a18 18 0 0 1 -15 -27" />
               </svg>
           </div>
-        </div>
+        
   </section>  
 
 <!-- <section style="background-color: #951a1c; padding-top: 30px" >
-    <!-- Container (Contact Section) 
+ Container (Contact Section) 
     <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
         <div class="row">
@@ -675,7 +693,7 @@ margin-bottom: 100px;
 
 
 
-<section style="background-color: #951a1c; padding-top: 30px" >
+<section style="background-color: #951a1c; padding: 30px" >
   <div class="container">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-10">
@@ -691,7 +709,9 @@ margin-bottom: 100px;
             fax: (48 12) 269 15 16
             </p>
             <p>
-              <span <img src="img\Aden_gray_Logo.svg" alt="Aden"> </span>
+              <span>
+                <img src="img/Aden_gray_Logo.svg" alt="Aden">
+              </span>
               ADEN PLUS sp. z o.o.
 
               NIP: PL 6762372654
@@ -713,6 +733,7 @@ margin-bottom: 100px;
 </footer>
 -->
 
+<script src='./js/slider.js'></script>
 <script>
   /*
 $(document).ready(function(){
@@ -749,7 +770,43 @@ $(document).ready(function(){
     });
   });
 })
-*/
+*/const slider = document.getElementById('sliderr');
+let lastIndex = 0;
+let count = 0;
+for(let i=0;i<slider.children.length;i++){
+    count += 1;
+    let child = slider.children[i];
+    console.log(child)
+    child.style.display = count > 3 ? 'none' : 'block'
+}
+
+function prevSlide(){
+    let active = []
+    let children = slider.children;
+    for(let i=0;i<children.length;i++){
+        if(children[i].style.display === 'block')
+            active.push(i)
+    }
+    if(active[0] === 0)
+        return;
+
+    children[active[active.length-1]].style.display = 'none'
+    children[active[0] - 1].style.display = 'block'
+}
+
+function nextSlide(){
+    let active = []
+    let children = slider.children;
+    for(let i=0;i<children.length;i++){
+        if(children[i].style.display === 'block')
+            active.push(i)
+    }
+    if(active[2] === children.length - 1)
+        return;
+
+    children[active[0]].style.display = 'none'
+    children[active[active.length-1] + 1].style.display = 'block'
+}
 </script>
 
 </body>
